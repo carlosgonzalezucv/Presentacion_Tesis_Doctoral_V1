@@ -1,11 +1,11 @@
 \ProvidesPackage{cg_config}
 
-\usepackage{amssymb,verbatim,enumerate,ifthen,graphics,graphicx,multicol}
-\usepackage{showkeys}
-\usepackage[mathscr]{eucal}
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
-\usepackage{setspace}
+%\usepackage{amssymb,verbatim,enumerate,ifthen,graphics,graphicx,multicol}
+%\usepackage{showkeys}
+%\usepackage[mathscr]{eucal}
+%\usepackage[utf8]{inputenc}
+%\usepackage[T1]{fontenc}
+%\usepackage{setspace}
 % Packages
 
 % Margins
@@ -16,7 +16,7 @@
 \newcommand{\phii}{\varphi}
 \newcommand{\R}{\mathbb{R}}
 \newcommand{\Q}{\mathbb{Q}}
-\newcommand{\N}{\mathbb{N}}
+\newcommand{\NN}{\mathbb{N}}
 \newcommand{\C}{\mathbb{C}}
 \newcommand{\Z}{\mathbb{Z}}
 \newcommand{\PP}{\mathbb{P}}
@@ -49,7 +49,7 @@
 \def\Prp#1#2{\ifthenelse{\equal{#1}{*}}{\begin{proposition*}#2\end{proposition*}}
             {\begin{proposition}\label{P#1}#2\end{proposition}}}
 \def\prp#1{Proposición~\ref{P#1}}
-\newtheorem{corollary}[theorem]{Corolario}
+\Cnewtheorem{corollary}[theorem]{Corolario}
 \newtheorem*{corollary*}{Corolario}
 \def\Cor#1#2{\ifthenelse{\equal{#1}{*}}{\begin{corollary*}#2\end{corollary*}}
             {\begin{corollary}\label{C#1}#2\end{corollary}}}
