@@ -11,22 +11,26 @@
 \ProvidesClass{Bredelebeamer}[17/02/2015, v1.0]
 
 \PassOptionsToPackage{svgnames}{xcolor}
-\LoadClass[compress,8pt]{beamer}
+\LoadClass[compress,8pt,serif]{beamer}
 
 
+\usepackage { mathpazo } % Mathpazo symbols
 
 
 
 \usepackage[spanish]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage{helvet}
+%\usepackage{helvet}
 \usepackage{pdfpages}
 \usepackage{graphicx}% http://ctan.org/pkg/graphicx
 \usepackage[footnotesize,hang]{caption} % réduire la taille des légendes des images
 \usepackage{hyperref}
 \usepackage{tikz}
 
+\usepackage{verbatim,enumerate,ifthen,graphics,graphicx,multicol}
+%\usepackage{showkeys}
+%\usepackage[mathscr]{eucal}
 
 
 
@@ -118,6 +122,7 @@ coltitle=white,center title}}
 \useinnertheme{rectangles}
 \useoutertheme[subsection=false]{miniframes}
 \setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{theorems}[numbered]
 
 \definecolor{sectionColor}{RGB}{0,0,0} % noir
 \definecolor{subsectionColor}{RGB}{97,97,97} % Framagris
@@ -154,7 +159,7 @@ coltitle=white,center title}}
 \definecolor{alertBlockTitleTextColor}{RGB}{255,255,255} % blanc
 
 
-\setbeamertemplate{blocks}[rectangle]
+\setbeamertemplate{blocks}[rounded]
 
 \setbeamercolor{section in head/foot}{bg=sectionColor, fg=sectionTextColor}
 \setbeamercolor{subsection in head/foot}{bg=subsectionColor, fg=subsectionTextColor}

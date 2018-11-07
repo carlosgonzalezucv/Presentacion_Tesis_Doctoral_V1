@@ -41,7 +41,7 @@
 \def\Thm#1#2{\ifthenelse{\equal{#1}{*}}{\begin{theorem*}#2\end{theorem*}}
 {\begin{theorem}\label{T#1}#2\end{theorem}}}
 % \newtheorem{Atheorem}{Teorema}
-\renewcommand{\theAtheorem}{\Alph{Atheorem}}
+%\renewcommand{\theAtheorem}{\Alph{Atheorem}}
 \def\THM#1#2{\begin{Atheorem}\label{T#1}#2\end{Atheorem}}
 \def\thm#1{Teorema~\ref{T#1}}
 % \newtheorem{proposition}[theorem]{Proposición}
@@ -68,7 +68,7 @@
 \def\Prob#1#2{\begin{problem}\label{Prob#1}\rm #2\end{problem}}
 \def\prob#1{Problema~\ref{Prob#1}}
 \theoremstyle{definition}
-% \newtheorem{definition}[theorem]{Definición}
+%\newtheorem{definition}[theorem]{Definición}
 \newtheorem*{definition*}{Definición}
 \def\Defi#1#2{\ifthenelse{\equal{#1}{*}}{\begin{definition*}#2\end{definition*}}
     {\begin{definition}\label{D#1}#2\end{definition}}}
