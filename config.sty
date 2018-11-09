@@ -32,6 +32,7 @@
 \newcommand{\rsg}{\mathop{\hbox{\rm rsg}}\nolimits}
 \newcommand{\cl}{\mathop{\hbox{\rm cl}}\nolimits}
 \renewcommand{\d}{\mathop{\hbox{\rm d}}\nolimits}
+\newcommand{\Epi}{\mathop{\hbox{\rm Epi}}\nolimits}
 %Custom commands
 
 % Definitions 
@@ -73,7 +74,7 @@
 \def\Defi#1#2{\ifthenelse{\equal{#1}{*}}{\begin{definition*}#2\end{definition*}}
     {\begin{definition}\label{D#1}#2\end{definition}}}
 \def\defi#1{Definición~\ref{D#1}}
-% \newtheorem{remark}[theorem]{Remark}
+\newtheorem{remark}[theorem]{Observación}
 \newtheorem*{remark*}{Remark}
 \long\def\Rem#1#2{\ifthenelse{\equal{#1}{*}}{\begin{remark*}#2\end{remark*}}
             {\begin{remark}\label{R#1}#2\end{remark}}}
