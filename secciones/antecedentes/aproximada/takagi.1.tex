@@ -1,0 +1,19 @@
+\begin{frame}{Función de Takagi}
+	\Defi{*}{
+    	La función $T:\R\to[0,1]$ definida mediante la fórmula 
+    	\Eq{Tak}{
+    	    T(t) = \sum_{n=0}^{\infty}\frac1{2^n}\dist(2^nt,\Z),\qquad(t\in\R),
+    	}
+    	se conoce como la función de \emph{Takagi}.
+	}
+	\begin{block}{Observación.}
+    	\Eq{*}{
+    	    T(t) = \limit_{n\to\infty} T_n(t),\quad t\in\R
+    	}
+    	donde
+    	\Eq{*}{
+    	    T_n(t) = T_{n-1}(t) +\frac1{2^n}\dist(2^nt,\Z), \quad n\in\NN,t\in\R,
+    	}
+    	y además $T_0(t) = \dist(t,\Z).$
+	\end{block}
+\end{frame}

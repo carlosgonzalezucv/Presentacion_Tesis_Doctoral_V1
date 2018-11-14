@@ -1,0 +1,49 @@
+\begin{frame}{Función midconvexa y $\Q$-convexidad.}
+  \Defi{*}{
+    Diremos que la función $f$ es \emph{midconvexa}, si la 
+    ecuación \eq{cvx} se cumple para $t=\frac12.$ Es
+    decir, si para todo $x,y\in H$ se tiene que 
+    \Eq{midcvx}{
+        f\bigg(\frac{x+y}{2}\bigg)\leq\frac{f(x) + f(y)}2.
+    }
+  }
+  \Defi{*}{
+    Diremos que la función $f$ es \emph{$\Q$-convexa}, 
+    si para todo $x,y\in H$ se tiene que 
+    \Eq{qcvx}{
+        f(tx + (1-t)y) \leq tf(x) + (1-t)f(y), \quad t\in[0,1]\cap\Q.
+    }
+  }
+\end{frame}
+
+\begin{frame}{Algunas observaciones.}
+    \begin{exampleblock}{Observación}
+        La desigualdad 
+        \Eq{*}{
+            f\bigg(\frac{x+y}{2}\bigg)\leq\frac{f(x) + f(y)}2.
+        }
+        implica que para todo $n\in\NN, x_1,x_2, \ldots, x_n\in H$
+        \Eq{*}{
+            f\bigg(\frac{x_1 + x_2 + \cdots + x_n}{n}\bigg)\leq\frac{f(x_1) + f(x_2) + \cdots + f(x_n)}n.
+        }
+        y a su vez, esto último implica que si $p,q\in\NN$, $q\neq0$, entonces 
+        \Eq{*}{
+            f\bigg(\frac{px + (q-p)y}{q}\bigg)\leq\frac{pf(x) + (q-p)f(y)}q.
+        }
+    \end{exampleblock}
+    \Thm{*}{
+        $f$ es midconvexa en $H$, si y sólo si, $f$ es $\Q$-convexa en $H$.
+    }{Referencia}
+\end{frame}
+
+\subsection{El teorema de Bernstein--Doetsch.}
+\begin{frame}{Teoremas de tipo Bernstein--Doetsch.}
+    \Thm{*}{
+        Toda función midconvexa y continua en $H$ es convexa.
+    }{\cite{Kuc85}, Theorem 5.3.5.}
+    \Thm{*}{
+        Toda función midconvexa y localmente acotada superior
+        en un punto, es convexa.
+    }{\cite{Kuc85}, Theorem 6.4.2, \cite{BerDoe15}}
+    \input{secciones/antecedentes/crono-bdt.tex}
+\end{frame}

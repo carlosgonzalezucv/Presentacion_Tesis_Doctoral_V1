@@ -1,0 +1,36 @@
+\begin{frame}{J. Mako, Z. Pales, J. Tabor, J.Tabor}
+	\Thm{*}{
+		Sea $D\subseteq \R$ un subconjunto abierto y convexo de la recta real.
+		Si $f:D\to\R$ es una función localmente acotada superior en un punto y 
+		$\alpha$-midconvexa en $D$, entonces, para todo $x,y\in D$ y para todo
+		$t\in[0,1]$ 
+		\Eq{*}{
+		    f(tx + (1-t)y)\leq 
+		        tf(x) + (1-t)f(y) + 
+		        \sum_{n=0}^{\infty}\frac{1}{2^n}\alpha(2\dist_\Z(2^nt)\|x-y\|).
+		}
+% 		donde 
+% 		\Eq{*}{
+%     		\T_\alpha(t,u)=\sum_{n=0}^{\infty}\frac{1}{2^n}\alpha(2\dist_\Z(2^nt)u),\quad
+%     		t\in[0,1], u\in D-D.
+% 		}
+	}{\cite{HazPal04,MakPal10b}}
+	
+	\Thm{*}{
+		Sea $D\subseteq \R$ un subconjunto abierto y convexo de la recta real.
+		Si $\sum_{n=0}^\infty\alpha(2^{-n})<\infty$ y
+		$f:D\to\R$ es una función localmente acotada superior en un punto y 
+		$\alpha$-midconvexa en $D$, entonces, para todo $x,y\in D$ y para todo
+		$t\in[0,1]$ 
+		\Eq{*}{
+    		f(tx + (1-t)y)\leq 
+    		    tf(x) + (1-t)f(y) + 
+    		    \sum_{n=0}^{\infty}2\dist_\Z(2^nt)\alpha\Bigg(\frac{\|x-y\|}{2^{n+1}}\Bigg).
+		}
+% 		donde 
+% 		$$
+% 		\MS_\alpha(t,u)=\sum_{n=0}^{\infty}2\dist_\Z(2^nt)\alpha\Big(\frac{u}{2^{n+1}}\Big),\quad
+% 		t\in[0,1], u\in D-D.
+% 		$$
+	}{\cite{TabTab09b}}
+\end{frame}

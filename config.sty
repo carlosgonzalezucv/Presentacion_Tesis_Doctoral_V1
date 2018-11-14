@@ -32,15 +32,18 @@
 \newcommand{\rsg}{\mathop{\hbox{\rm rsg}}\nolimits}
 \newcommand{\cl}{\mathop{\hbox{\rm cl}}\nolimits}
 \renewcommand{\d}{\mathop{\hbox{\rm d}}\nolimits}
+\newcommand{\limit}{\mathop{\hbox{\rm lim}}}
 \newcommand{\Epi}{\mathop{\hbox{\rm Epi}}\nolimits}
+\newcommand{\T}{\mathcal{T}}
+\newcommand{\MS}{\mathcal{S}}
 %Custom commands
 
 % Definitions 
 % \newtheorem{theorem}{Teorema}
 \renewcommand{\thetheorem}{\textrm{\thesection.\arabic{theorem}}}
 \newtheorem*{theorem*}{Teorema}
-\def\Thm#1#2{\ifthenelse{\equal{#1}{*}}{\begin{theorem*}#2\end{theorem*}}
-{\begin{theorem}\label{T#1}#2\end{theorem}}}
+\def\Thm#1#2#3{\ifthenelse{\equal{#1}{*}}{\begin{theorem*}[#3]#2\end{theorem*}}
+  {\begin{theorem}[#3]\label{T#1}#2\end{theorem}}}
 % \newtheorem{Atheorem}{Teorema}
 %\renewcommand{\theAtheorem}{\Alph{Atheorem}}
 \def\THM#1#2{\begin{Atheorem}\label{T#1}#2\end{Atheorem}}
@@ -87,3 +90,10 @@
 
   \allowdisplaybreaks
   \renewcommand{\baselinestretch}{1.5}
+  
+ \def\DefiOp#1#2#3{\ifthenelse{\equal{#1}{*}}{\begin{definition*}[#3]#2\end{definition*}}
+  {\begin{definition}[#3]\label{T#1}#2\end{definition}}}
+  
+  
+\newcommand{\ccvx}[2]{t#1 + (1-t)#2 } %combinacion convexa
+\newcommand{\cmcvx}[2]{ \frac{#1+#2}2} %combinacion midconvexa

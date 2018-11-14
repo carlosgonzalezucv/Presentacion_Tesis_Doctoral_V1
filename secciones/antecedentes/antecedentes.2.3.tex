@@ -1,0 +1,51 @@
+\begin{frame}{Epígrafo de una función.}
+  \begin{alertblock}{Notación}
+    Sea $X$ un espacio normado, $H\subseteq X$
+    un conjunto abierto y convexo de $X$ y 
+    $f:H\to \R$ una función.
+  \end{alertblock}
+  \Defi{*}{
+    El \emph{epígrafe} de $f$
+    es el conjunto
+    \Eq{def_epigraph}{
+      \Epi{f} := \{(x,y)\in H\times\R \quad|\quad y \geq f(x)\}
+    }
+  }
+  \Defi{*}{
+    Decimos que $f$ es \emph{convexa}
+    en $H$ si, $\Epi{f}$ es un conjunto convexo.
+  }
+  
+\end{frame}
+
+\begin{frame}{}
+    
+  \begin{block}{Observación}
+    Sean $x,y\in H$. Note que $(x,f(x)), (y,f(y)) \in\Epi{f}$. Por lo tanto, si 
+    $\Epi{f}$ es un conjunto convexo, entonces    
+    \Eq{*}{
+        t(x,f(x)) &+ (1-t)(y,f(y)) 
+          = (tx + (1-t)y, tf(x) + (1-t)f(y)) \in \Epi{f} \quad 
+          \forall t\in[0,1], \\
+        \mbox{i.e., }& \qquad 
+            \fbox{ 
+                $f(tx + (1-t)y) \leq tf(x) + (1-t)f(y))  
+                    \quad\forall t\in[0,1],$ 
+            }
+    }
+  \end{block}
+  \Prp{*}{
+    $f$ es \emph{convexa} en $H$ sii, para todo $x,y\in H$ 
+    se tiene que 
+    \Eq{cvx}{
+      f(tx + (1-t)y) \leq tf(x) + (1-t)f(y), \quad t\in[0,1].
+    }
+  }
+  \Defi{*}{
+    Diremos que $f$ es \emph{cóncava} en $H$ si para todo $x,y\in H,$ 
+    se tiene que 
+    \Eq{cvx}{
+        tf(x) + (1-t)f(y) \leq f(tx + (1-t)y), \quad t\in[0,1].
+    }
+  }
+\end{frame}

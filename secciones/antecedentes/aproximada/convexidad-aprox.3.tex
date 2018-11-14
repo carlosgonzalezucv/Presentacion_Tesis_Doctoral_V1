@@ -1,0 +1,22 @@
+\begin{frame}
+	\Thm{*}{
+    	La función de Takagi es $\big(\frac12,0\big)$-midconvexa, i.e.,
+    	\Eq{*}{
+    	    T\bigg(\cmcvx{x}{y}\bigg)\leq \cmcvx{T(x)}{T(y)}+\Big|\frac{x-y}2\Big|,
+    	}
+    	para todo $x,y\in\R$.
+    	}{\cite{Bor08}}
+	\begin{exampleblock}{Observación}
+    	Supongamos que el teorema anterior sigue siendo válido si se reemplaza
+    	$T$ por una función $\phi$ arbitraria.
+    	Aplicando el Teorema HP a la función de Takagi, obtenemos
+    	que para todo $x,y\in\R$ y todo $\lambda\in[0,1]$
+    	\Eq{*}{
+    	    T(\lambda x+(1-\lambda)y) \leq \lambda T(x)+(1-\lambda)T(y)+\phi(\lambda )|x-y|.
+    	}
+    	En particular, para $x=1$ y $y=0$ la ecuación anterior se convierte en
+    	\Eq{*}{
+    	    T(\lambda) \leq \phi(\lambda).
+    	}
+    \end{exampleblock}
+\end{frame}

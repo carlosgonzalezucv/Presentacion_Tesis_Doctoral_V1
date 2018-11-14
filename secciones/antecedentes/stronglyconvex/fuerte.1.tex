@@ -1,0 +1,20 @@
+\begin{frame}{Convexidad fuerte}
+    \DefiOp{*}{
+    	Sea $c>0$. Se dice que una función $f:D\to\R$ 
+    	es fuertemente midconvexa con módulo $c$, si 	
+    	para todo $x,y\in D$ y $t\in[0,1]$
+    	\Eq{strgMidPol}{
+    	    f\bigg(\frac{x+y}{2}\bigg)\leq \frac{f(x)+f(y)}2-\frac{c}4\|x-y\|^2,
+    	}
+	}{\cite{Pol66}}
+	\Thm{*}{
+    	Sea $c>0$. Si $f:D\to\R$ es una función fuertemente midconvexa 
+    	con módulo $c$ y acotada superiormente en un subconjunto de $D$ 
+    	con interior no vacío, entonces, $f$ es una función continua
+    	y además fuertemente convexa con módulo $c$, i.e.,
+    	\Eq{strgPol}{
+    	    f(tx+(1-t)y)\leq tf(x)+(1-t)f(y)-ct(1-t)\|x-y\|^2,
+    	}
+	    para todo $x,y\in D,$ $t\in[0,1]$.
+	}{\cite{AzoGimNikSan11}}
+\end{frame}

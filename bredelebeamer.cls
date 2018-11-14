@@ -33,7 +33,7 @@
 %\usepackage[mathscr]{eucal}
 
 
-
+\usepackage{chronosys} 
 
 
 
@@ -123,6 +123,7 @@ coltitle=white,center title}}
 \useoutertheme[subsection=false]{miniframes}
 \setbeamertemplate{navigation symbols}{}
 \setbeamertemplate{theorems}[numbered]
+\setbeamertemplate{bibliography item}[text]
 
 \definecolor{sectionColor}{RGB}{0,0,0} % noir
 \definecolor{subsectionColor}{RGB}{97,97,97} % Framagris

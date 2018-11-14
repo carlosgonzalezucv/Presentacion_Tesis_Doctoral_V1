@@ -1,0 +1,20 @@
+\begin{frame}{Convexidad aproximada.}
+    Sean $\varepsilon, \delta \geq 0$, 
+    $f:H\to \R$ y $\alpha:\R^+\to\R^+$, una función no-decreciente.
+    \DefiOp{*}{
+        \begin{itemize}
+            \item $f$ es \emph{$\varepsilon$-midconvexa} si para todo $x,y\in H$ 
+            	\Eq{*}{
+            	    f\bigg(\cmcvx{x}{y}\bigg)\leq \cmcvx{f(x)}{f(y)} +\varepsilon.
+            	}
+            \item $f$ es \emph{$(\delta,\varepsilon)$-midconvexa} en $H,$ si para todo $x,y \in H$
+            	\Eq{*}{
+            	    f\bigg(\cmcvx{x}{y}\bigg)\leq \cmcvx{f(x)}{f(y)}+\delta\|x-y\|+\varepsilon
+            	}
+            \item $f$ es \emph{$\alpha(\cdot)$-midconvexa} en $H,$ si para todo $x,y \in H$
+        		\Eq{e-Cvx}{
+        			f\bigg(\frac{x+y}2\bigg) \leq \frac{f(x)+f(y)}2 + \alpha(\|x-y\|).
+        		}
+        \end{itemize}
+	}{\cite{HyeUla52}, \cite{HazPal04}, \cite{TabTab09b}}
+\end{frame}
