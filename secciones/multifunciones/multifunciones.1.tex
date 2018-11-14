@@ -1,19 +1,26 @@
-\begin{frame}{Multifunciones.}
-  Sean $X$ y $Y$ espacios topol\'ogicos lineales y sea $D\subseteq X$
-  un subconjunto abierto y convexo. Denotemos por $\P_0(Y)$ a la clase
-  de subconjuntos no-vac\'ios de $Y$.
+\begin{frame}{Midconvexidad.}
+  Sea $F:H\to\P_0(Y)$ una multifunción.
   \Defi{*}{
-    Una multifunci\'on $F:D\to\P_0(Y)$ es midconvexa en $D,$ si para todo
-    $x,y\in D$ se satisface 
+    $F$ es midconvexa en $H,$ si para todo
+    $x,y\in H$ se satisface 
     \Eq{*}{
       \cmcvx{F(x)}{F(y)} \subseteq F\bigg(\cmcvx{x}{y}\bigg).
     }
   }
   \Defi{*}{
-    Una multifunci\'on $F:D\to\P_0(Y)$ es midc\'oncava en $D,$ si para todo
-    $x,y\in D$ se satisface 
+    $F$ es midcóncava en $D,$ si para todo
+    $x,y\in H$ se satisface 
     \Eq{*}{
-      F\Xbigg(\cmcvx{x}{y}\bigg)\subseteq\cmcvx{F(x)}{F(y)}.
+      F\bigg(\cmcvx{x}{y}\bigg)\subseteq\cmcvx{F(x)}{F(y)}.
     }
   }
+  \begin{alertblock}{Observación}
+    \begin{center}
+      $F$ es midconvexa $\xcancel{\iff}$ $-F$ es midcóncava.
+    \end{center}
+    %Este ejemplo evidencia que no existe hay una analog\'ia directa entre 
+    %las multifunciones mid-convexas y las multifunciones mid-c\'oncavas. En 
+    %consecuencia, los resultados obtenidos con respecto a estas clases de 
+    %multifunciones deben tratarse por separado.
+  \end{alertblock}
 \end{frame}

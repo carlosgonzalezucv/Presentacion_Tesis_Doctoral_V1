@@ -23,10 +23,13 @@
 \usepackage[T1]{fontenc}
 %\usepackage{helvet}
 \usepackage{pdfpages}
+\usepackage{mathrsfs}
+
 \usepackage{graphicx}% http://ctan.org/pkg/graphicx
 \usepackage[footnotesize,hang]{caption} % réduire la taille des légendes des images
 \usepackage{hyperref}
 \usepackage{tikz}
+\usepackage{cancel}
 
 \usepackage{verbatim,enumerate,ifthen,graphics,graphicx,multicol}
 %\usepackage{showkeys}
