@@ -1,0 +1,24 @@
+\begin{frame}{Convexidad Fuerte.}
+	Cuando $(X,\|\cdot\|)$ y $(Y,\|\cdot\|)$
+	son espacios vectoriales normados
+	y  $B_Y\subseteq Y$ es el interior 
+	de la bola unitaria en $Y$. 
+	\DefiOp{*}{
+    Sea $F:D\to\P_0(Y)$ una multifunción y sea $c>0$. Se dice que 
+    $F$ es fuertemente convexa con módulo $c$
+    si 
+    \Eq{StrgCvxSVM}{
+      tF(x)+(1-t)F(y)+ct(1-t)\|x-y\|^2\overline{B_Y} \subseteq 
+      F(tx+(1-t)y)
+    }
+    para todo $x,y\in D$ y para todo $t\in[0,1]$.
+	}{\cite{Hua10}}
+	\Defi{*}{
+    Sea $F:D\to\P_0(Y)$ una multifunción y sea $c>0$. Se dice que 
+    $F$ es fuertemente midconvexa con módulo $c$ si 
+    \Eq{StrgMidCvxSVM}{
+      \frac{F(x)+F(y)}2+\frac{c}4\|x-y\|^2\overline{B_Y} \subseteq 
+      F\bigg(\frac{x+y}2\bigg).
+    }
+	}
+\end{frame}

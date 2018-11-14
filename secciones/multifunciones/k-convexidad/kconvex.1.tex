@@ -1,0 +1,20 @@
+\begin{frame}{$K$-convexidad}
+	Sean $X,Y$ espacios topológicos lineales, $D\subseteq X$
+	un subconjunto abierto y convexo y sea $K\subseteq Y$
+	un cono convexo. Denotemos por $\U(X)$ y $\U(Y)$
+	a las bases locales de $X$ y $Y$ respectivamente.
+	\Defi{*}{
+    Se dice que la multifunción $F$ es $K$-convexa en $D$ si para todo $x,y\in D$ 
+    y para todo $t\in[0,1]$ se tiene que 
+    \Eq{Kcvxsvm}{
+      tF(x)+(1-t)F(y)\subseteq F(tx+(1-t)y)+K
+    }
+	}
+	\Defi{*}{
+    Se dice que la multifunción $F$ es $K$-cóncava en $D$ si para todo $x,y\in D$ 
+    y para todo $t\in[0,1]$ se tiene que 
+    \Eq{Kccvsvm}{
+      F(tx+(1-t)y)\subseteq tF(x)+(1-t)F(y)+K
+    }
+	}
+\end{frame}
